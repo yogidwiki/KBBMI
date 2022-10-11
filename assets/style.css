@@ -1,0 +1,104 @@
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#banner{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)), url(./img/banner/alex-litvin-MAYsdoYpGuk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.banner-content h1{
+    color: #fff;
+    font-size: 55   px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* film */
+#film {
+    background-image: linear-gradient(to right, #531010, rgb(14,14,13));
+}
+.title-section{
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.card-img-top{
+    height: 250px;
+}
+.card-title {
+    font-size: 15px;
+}
+.card{
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 78, 78);
+}
+#sinopsis{
+    background-image: linear-gradient(to left, #531010 , rgb(14, 14, 13)) ;
+}
+
+
+.card-sinopsis img{
+   width: 100%;
+   border-radius: 16px;
+   transition: 0.3s ease-in-out;
+   border: 5px solid #fff;
+}
+.card-sinopsis img:hover{
+   transform: scale(0.9);
+}
+
+.sinopsis-text{
+   padding: 16px;
+}
+
+.sinopsis-text h1{
+   font-weight: 800;
+   font-size: 36px;
+   color: #ffffff;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+   
+text-shadow: 0 0 5px #f0ed49, 0 0 10px #0000FF;
+}
+
+.sinopsis-text p{
+   color: white;
+   font-weight: 400;
+   
+}
+
+
+@media only screen and (max-width:600px){
+
+   #listFilm{
+       text-align: center;
+   }
+
+   .card {
+       width: 80%;
+   }
+   .card:hover{
+       transform: scale(0.9);
+       
+   }
+
+   #sinopsis{
+       text-align: center;
+   }
+
+   .card-sinopsis img{
+       width: 80%;
+   }
+}
